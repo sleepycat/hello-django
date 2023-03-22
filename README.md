@@ -16,4 +16,6 @@ That doesn't sound like much but in 2022 there is quite a bit to explore:
 * [SBOMs](https://github.com/sigstore/cosign) for all of it
 * [Using Jemalloc](https://nullonerror.org/2022/03/16/add-jemalloc-to-your-python-docker-images/) to reduce memory usage.
 * Restrict process with [Kubernetes SecurityContext](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod)
-* Source code scanning/linting (bandit? Pylint?) as far left as possible (as-I-type vs pre-commit vs CI)
+* Source code scanning/linting (bandit? Pylint? [Ruff](https://beta.ruff.rs/docs/)?) as far left as possible ([as-I-type](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff) vs pre-commit vs CI)
+* Figure out what to do with python bytecode. [Complile everything](https://docs.python.org/3/library/compileall.html) or get rid of *.pyc?
+* Dealing with the catch 22 of [needing environmental variables in the build process](https://stackoverflow.com/questions/59719175/where-to-run-collectstatic-when-deploying-django-app-to-heroku-using-docker)
